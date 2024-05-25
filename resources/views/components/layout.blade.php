@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100"> 
+<html lang="en" class="h-full bg-gray-100">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,22 @@
 
     <title>Laravel 11</title>
 </head>
+
 <body class="h-full">
 
-<div class="min-h-full">
-  <x-navbar></x-navbar>
+    <div class="min-h-full">
+        <x-navbar></x-navbar>
 
-  <x-header>{{ $title }}</x-header>
+        <x-header>{{ $title }}</x-header>
 
-  <main>
-    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-      {{ $slot }}
+        <main>
+            <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                {{ $slot }}
+            </div>
+        </main>
     </div>
-  </main>
-</div>
 
 
 </body>
+
 </html>
